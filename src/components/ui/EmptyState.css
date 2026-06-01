@@ -1,0 +1,46 @@
+.empty-state-rich {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.empty-state-rich__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  border: 1px dashed var(--color-accent);
+  animation: pulse-soft 2.5s ease-in-out infinite;
+}
+
+.empty-state-rich__title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-heading);
+}
+
+.empty-state-rich__desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  max-width: 22rem;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}

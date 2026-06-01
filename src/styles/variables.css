@@ -1,0 +1,160 @@
+/* Design tokens — light (default) */
+
+:root,
+
+[data-theme='light'] {
+
+  --color-bg: #f4f6fc;
+
+  --color-bg-elevated: #ffffff;
+
+  --color-surface: rgba(255, 255, 255, 0.82);
+
+  --color-text: #3d4451;
+
+  --color-text-muted: #6b7280;
+
+  --color-heading: #1a1d24;
+
+  --color-border: rgba(26, 29, 36, 0.09);
+
+  --color-accent: #4f6ef7;
+
+  --color-accent-soft: rgba(79, 110, 247, 0.14);
+
+  --color-accent-hover: #3d5ce6;
+
+  --color-accent-glow: rgba(79, 110, 247, 0.35);
+
+  --color-nav-active: #4f6ef7;
+
+  --color-warm: #f59e0b;
+
+  --color-warm-soft: rgba(245, 158, 11, 0.14);
+
+  --color-success: #10b981;
+
+  --color-success-soft: rgba(16, 185, 129, 0.14);
+
+  --color-danger: #ef4444;
+
+  --shadow-sm: 0 1px 3px rgba(26, 29, 36, 0.06);
+
+  --shadow-md: 0 8px 32px rgba(26, 29, 36, 0.08);
+
+  --shadow-lg: 0 16px 48px rgba(79, 110, 247, 0.12);
+
+  --pattern-opacity: 0.4;
+
+  --grid-color: rgba(79, 110, 247, 0.07);
+
+  --glow-color: rgba(79, 110, 247, 0.1);
+
+  --gradient-hero: linear-gradient(
+
+    135deg,
+
+    rgba(255, 255, 255, 0.95) 0%,
+
+    rgba(240, 244, 255, 0.9) 50%,
+
+    rgba(255, 250, 245, 0.85) 100%
+
+  );
+
+  --gradient-text: linear-gradient(135deg, #1a1d24 0%, #4f6ef7 100%);
+
+  --gradient-btn: linear-gradient(135deg, #5b7cfa 0%, #4f6ef7 50%, #6b5ce7 100%);
+
+}
+
+
+
+[data-theme='dark'] {
+
+  --color-bg: #0c0e14;
+
+  --color-bg-elevated: #161922;
+
+  --color-surface: rgba(22, 25, 34, 0.9);
+
+  --color-text: #a8b0c0;
+
+  --color-text-muted: #6b7385;
+
+  --color-heading: #eef1f6;
+
+  --color-border: rgba(238, 241, 246, 0.09);
+
+  --color-accent: #7b9cff;
+
+  --color-accent-soft: rgba(123, 156, 255, 0.16);
+
+  --color-accent-hover: #9ab4ff;
+
+  --color-accent-glow: rgba(123, 156, 255, 0.4);
+
+  --color-nav-active: #7b9cff;
+
+  --color-warm: #fbbf24;
+
+  --color-warm-soft: rgba(251, 191, 36, 0.14);
+
+  --color-success: #34d399;
+
+  --color-success-soft: rgba(52, 211, 153, 0.14);
+
+  --color-danger: #f87171;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+
+  --shadow-md: 0 8px 40px rgba(0, 0, 0, 0.4);
+
+  --shadow-lg: 0 16px 56px rgba(123, 156, 255, 0.15);
+
+  --pattern-opacity: 0.55;
+
+  --grid-color: rgba(123, 156, 255, 0.06);
+
+  --glow-color: rgba(123, 156, 255, 0.14);
+
+  --gradient-hero: linear-gradient(
+
+    135deg,
+
+    rgba(22, 25, 34, 0.98) 0%,
+
+    rgba(30, 38, 58, 0.95) 50%,
+
+    rgba(28, 32, 42, 0.98) 100%
+
+  );
+
+  --gradient-text: linear-gradient(135deg, #eef1f6 0%, #9ab4ff 100%);
+
+  --gradient-btn: linear-gradient(135deg, #8ba8ff 0%, #7b9cff 50%, #a78bfa 100%);
+
+}
+
+
+
+:root {
+
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+
+  --radius-sm: 8px;
+
+  --radius-md: 12px;
+
+  --radius-lg: 16px;
+
+  --nav-height: 64px;
+
+  --content-max: 1100px;
+
+  --transition: 0.2s ease;
+
+}
+

@@ -1,0 +1,23 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.theme-toggle__icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}

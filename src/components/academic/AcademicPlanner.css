@@ -1,0 +1,86 @@
+.academic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.academic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  transition: border-color var(--transition), box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.academic-item:hover {
+  border-color: rgba(79, 110, 247, 0.2);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.academic-item--done {
+  opacity: 0.7;
+  background: var(--color-success-soft);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.academic-item--done .academic-item__title {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.academic-item__check {
+  padding-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.academic-item__check input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.academic-item__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.academic-item__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.academic-item__title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-heading);
+}
+
+.academic-item__meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.academic-item__reminder {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-warm-soft);
+}

@@ -1,0 +1,232 @@
+.habit-limit {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.habit-month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.habit-month-nav__label {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.habit-grid-legend {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.habit-grid-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -0.25rem;
+  padding-bottom: 0.5rem;
+  border-radius: var(--radius-md);
+}
+
+.habit-grid {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  font-size: 0.75rem;
+}
+
+.habit-grid__corner {
+  text-align: left;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  background: var(--color-surface);
+  z-index: 2;
+  min-width: 140px;
+}
+
+.habit-grid__day {
+  padding: 0.35rem 0.15rem 0.5rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  min-width: 2.25rem;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.habit-grid__day--today {
+  color: var(--color-accent);
+}
+
+.habit-grid__day--today .habit-grid__dom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.habit-grid__day--weekend {
+  opacity: 0.75;
+}
+
+.habit-grid__dow {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+  line-height: 1.2;
+}
+
+.habit-grid__dom {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.1rem;
+}
+
+.habit-grid__name {
+  text-align: left;
+  padding: 0.4rem 0.75rem 0.4rem 0;
+  position: sticky;
+  left: 0;
+  background: var(--color-surface);
+  z-index: 1;
+  white-space: nowrap;
+  min-width: 140px;
+}
+
+.habit-name-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--color-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.habit-name-btn:hover {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.habit-grid__row--selected .habit-name-btn {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.habit-grid__row--selected .habit-color-dot {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 22%, transparent);
+}
+
+.habit-grid__row:hover .habit-grid__cell:not(.habit-grid__cell--done) {
+  background: color-mix(in srgb, var(--color-accent) 4%, transparent);
+}
+
+.habit-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.habit-remove {
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  padding: 0 0.35rem !important;
+}
+
+.habit-grid__cell {
+  text-align: center;
+  padding: 0.2rem 0.15rem;
+  vertical-align: middle;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s ease;
+}
+
+.habit-grid__cell--weekend {
+  background: color-mix(in srgb, var(--color-text-muted) 6%, transparent);
+}
+
+.habit-grid__cell--today {
+  background: var(--color-accent-soft);
+}
+
+.habit-grid__cell--done {
+  background: color-mix(in srgb, var(--color-success) 8%, transparent);
+}
+
+.habit-detail__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.habit-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-soft) 0%,
+    var(--color-bg-elevated) 70%
+  );
+}
+
+.habit-stat__value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.habit-stat__label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.habit-detail__chart-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.habit-detail__close {
+  margin-top: 1rem;
+}
+
+.habit-detail .card__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
